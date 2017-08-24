@@ -16,7 +16,7 @@ void setup() {
 void loop() {
   //blocking functions like 'delay(1000);' will screw up library's internal loop.
   doSomethingNonBlocking();
-  rgb_led.execute();
+  rgb_led.execute(); //need to run this to for internal loop
 }
 
 void doSomethingNonBlocking() {
