@@ -11,6 +11,8 @@ unsigned long counter = 0;
 
 void setup() {
   rgb_led.setColor(LED_COLOR_BLUE);
+  //rgb_led.setColor(0,0,200);
+  //rgb_led.blinkColor(0,0,200);
 }
 
 void loop() {
