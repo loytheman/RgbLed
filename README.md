@@ -1,12 +1,12 @@
-# RgbLed
-Arduino library to control rgb led as status indicator.
+# RgbLed 
+Arduino library to control rgb led (common cathode) as status indicator.
 
 Eg.
 
 ````C++
 #include <RgbLed.h>
 
-RgbLed rgb_led(D8,D6,D7);
+RgbLed rgb_led(D8,D6,D7); //initialize with pins
 unsigned long counter = 0;
 
 void setup() {
@@ -30,7 +30,7 @@ void doSomethingNonBlocking() {
   } else if (counter == 12000) {
     rgb_led.blinkColor(LED_COLOR_MAGENTA); 
   } else if (counter == 15000) {
-    rgb_led.rotateColor();
+    rgb_led.rotateColor(); //loop through all the colors
   }
   delay(1); //make it run slower
 }
