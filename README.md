@@ -3,7 +3,7 @@ Arduino library to control rgb led as status indicator.
 
 Eg.
 
-
+````C++
 #include <RgbLed.h>
 
 RgbLed rgb_led(D8,D6,D7);
@@ -34,3 +34,4 @@ void doSomethingNonBlocking() {
   }
   delay(1); //make it run slower
 }
+````
